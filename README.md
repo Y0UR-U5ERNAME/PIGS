@@ -18,7 +18,7 @@ Parameters are always binary numbers written with `0` and `1`. Variables are num
 All characters besides those described above are treated as comments.
 
 ## Examples
-- Hello, World!: `#1001000P0#1100101P0#1101100P0#1101100P0#1101111P0#101100P0#100000P0#1010111P0#1101111P0#1110010P0#1101100P0#1100100P0#100001P0`
-- Truth Machine: `#1S0#10S1#11110S0#11S1#11100S0#100S1#110001S0#101S1#10S0#110I1S0#111S1#0+110=100+101:111P110G111`
-- Infinite Loop: `G0`
-- Cat Program: `#1S0#10S1#1000S0#101S1#11110S0+0S1#100101S0+0S1#10010I10S0#11S1:10=100+0+0+0+0+0:11G11:10P11S0#10S1+0G111`
+- [Hello, world!](https://esolangs.org/wiki/Hello,_world!): `#1001000P0#1100101P0#1101100P0#1101100P0#1101111P0#101100P0#100000P0#1110111P0#1101111P0#1110010P0#1101100P0#1100100P0#100001P0`
+- [Truth-machine](https://esolangs.org/wiki/Truth-machine): `#1S0#10S1#11110S0#11S1#11100S0#100S1#110001S0#101S1#10S0#110I1S0#111S1#0+110=100+101:111P110G111`
+- [Infinite loop](https://esolangs.org/wiki/Infinite_loop): `G0`
+- [Cat program](https://esolangs.org/wiki/Cat_program): `#1S0#10S1#1000S0#101S1#11110S0+0S1#100101S0+0S1#10010I10S0#11S1:10=100+0+0+0+0+0:11G11:10P11S0#10S1+0G111`
