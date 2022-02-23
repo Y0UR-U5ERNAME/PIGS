@@ -48,6 +48,7 @@ while c < len(commands):
     elif i == '=':
         variables[pv] = int(variables[pv] == J)
     elif i == ':':
+        initvar(J)
         variables[pv] = variables[J]
     elif i == '#':
         variables[pv] = j
