@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PIGS Interpreter in HTML + JS</title>
+        <style>
+            body {
+                background-color: pink;
+                font-family: monospace;
+            }
+            h1 {
+                color: navy;
+                font-weight: bold;
+            }
+            div {
+                background-color: white;
+                border: 1px solid black;
+                width: 500px;
+                height: 300px;
+                overflow: auto;
+                word-break: break-all;
+            }
+            button {
+                background-color: white;
+                font-family: monospace;
+            }
+            .inputted {
+                width: 80px !important;
+                height: 16px !important;
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PIGS Interpreter in HTML + JS</h1>
+
+        <h3>Program:</h3>
+        <textarea id="program" rows="5" cols="40"></textarea>
+        <br>
+        <button onclick="reset();run();">Run</button>
+
+        <h3>Output:</h3>
+        <p id="status"></p>
+        <div id="output">
+
+        </div>
+        <button onclick="reset();">Reset</button>
+
+        <br><br><a href="https://github.com/Y0UR-U5ERNAME/PIGS">GitHub Repositiory</a>
+
+        <script src="pigs.js"></script>
+    </body>
+</html>
