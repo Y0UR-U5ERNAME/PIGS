@@ -7,7 +7,7 @@ let interval;
 function run() {
     let i, j, J;
     let b = false;
-    if (commands) {        
+    if (commands) {
         document.getElementById("status").innerHTML = "Running...";
         interval = setInterval(() => {
             if (c < commands.length) {
@@ -29,10 +29,12 @@ function run() {
                                 waiting = true;
                             }
                         } else {
-                            for (var k = 0; k < inp.length; k++) {
+                            var k = 0
+                            for (var l of inp) {
                                 idx = J + k;
                                 clamp(idx);
-                                variables[idx] = inp.codePointAt(k);
+                                variables[idx] = l.codePointAt(0);
+                                k++;
                             }
                             inp = undefined;
                         }
@@ -109,5 +111,5 @@ function output(x) {
     out.scrollTop = out.scrollHeight;
 }
 
-let initvar = v => {if (!Object.keys(variables).includes(v.toString())) variables[v] = 0;}
-let clamp = n => {n = n % (2 ** 32);}
+const initvar = v => {if (!Object.keys(variables).includes(v.toString())) variables[v] = 0;}
+const clamp = n => {n = n % (2 ** 32);}
