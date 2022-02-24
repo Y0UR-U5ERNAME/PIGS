@@ -1,4 +1,4 @@
-import re
+import re, sys
 
 def initvar(v):
     if v not in variables:
@@ -6,13 +6,27 @@ def initvar(v):
 
 def clamp(n): n = n % (2 ** 32)
 
+if len(sys.argv) < 2:
+    print('Please input the file location of a .pigs program.')
+    quit()
+elif not sys.argv[1].endswith(".pigs"):
+    print('Specified file is not a .pigs file.')
+    quit()
+else:
+    try:
+        prgm = open(sys.argv[1])
+    except:
+        print('Could not find specified .pigs program.')
+        quit()
 
-program = input()
+program = prgm.read()
 program = re.sub('[^PIGS+-=:#01]', '', program)
+prgm.close()
 #print('Compressed Program:', program + '\n')
 
 variables = {0: 0}
 commands = [i for i in re.findall('([PIGS+-=:#])([01]+)', program) if i[0] in 'PIGS+-=:#']
+
 #print(commands)
 
 c = 0
