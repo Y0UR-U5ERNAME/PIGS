@@ -25,11 +25,11 @@ function run() {
                     case "I":
                         if (inp === undefined) {
                             if (!waiting) {
-                                output('<textarea class="input" rows="1" cols="5"></textarea><button id="submit" onclick="sub();" onchange="">Submit</button>');
+                                output('<textarea class="input" rows="1" cols="5"></textarea><button id="submit" onclick="sub();">Submit</button>');
                                 waiting = true;
                             }
                         } else {
-                            var k = 0
+                            var k = 0;
                             for (var l of inp) {
                                 idx = J + k;
                                 clamp(idx);
