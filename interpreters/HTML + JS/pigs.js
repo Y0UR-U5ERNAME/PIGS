@@ -31,7 +31,7 @@ function run() {
                         } else {
                             var k = 0;
                             for (var l of inp) {
-                                idx = J + k;
+                                var idx = J + k;
                                 clamp(idx);
                                 variables[idx] = l.codePointAt(0);
                                 k++;
