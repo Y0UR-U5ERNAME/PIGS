@@ -93,10 +93,13 @@ function sub() {
 
 function reset() {
     document.getElementById("output").innerHTML = "";
+    document.getElementById("status").innerHTML = "";
     variables = {0: 0};
     commands = document.getElementById("program").value.replace(/[^PIGS+-=:#01]/g, "").match(/([PIGS+-=:#])([01]+)/g);
     c = 0;
     pv = 0;
+    waiting = false;
+    inp = undefined;
 }
 
 function output(x) {
