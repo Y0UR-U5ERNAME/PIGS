@@ -100,6 +100,7 @@ function reset() {
     pv = 0;
     waiting = false;
     inp = undefined;
+    clearInterval(interval);
 }
 
 function output(x) {
