@@ -26,7 +26,7 @@ function run() {
                         case "I":
                             if (inp === undefined) {
                                 if (!waiting) {
-                                    output('<textarea class="input" rows="1" cols="5"></textarea><button id="submit" onclick="sub();">Submit</button>');
+                                    output('<textarea class="input" rows="1" cols="20"></textarea><button id="submit" onclick="sub();">Submit</button><br>');
                                     waiting = true;
                                 }
                             } else {
