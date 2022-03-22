@@ -67,8 +67,7 @@ def main(argv=sys.argv):
             variables[pv] = j
             clamp(variables[pv])
         c += 1
-    
-    print(variables)
+    #print(variables)
 
 if __name__ == "__main__":
     main()
