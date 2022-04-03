@@ -4,12 +4,12 @@ let inp = undefined;
 let commands, c, pv;
 let interval;
 
-if (window.location.host === "htmlpreview.github.io" && window.location.search.length > 88) {
-    document.getElementById('program').value = window.location.search.length.slice(88)
+if (window.location.host === "htmlpreview.github.io" && window.location.hash) {
+    document.getElementById('program').value = window.location.hash.slice(1)
 }
 
 function updateLink() {
-    document.getElementById('link').href ='https://htmlpreview.github.io/?https://github.com/Y0UR-U5ERNAME/PIGS/blob/main/interpreters/HTML%20%2B%20JS/pigs.html?' + document.getElementById('program').value
+    document.getElementById('link').href ='https://htmlpreview.github.io/?https://github.com/Y0UR-U5ERNAME/PIGS/blob/main/interpreters/HTML%20%2B%20JS/pigs.html#' + document.getElementById('program').value
 }
 
 function run() {
