@@ -1,7 +1,7 @@
 # PIGS
 PIGS is a minimalistic interpreted esolang based around pointers made by Y0UR-U5ERNAME. Its name originates from the four main commands in it: `P`, `I`, `G`, and `S`.
 
-[Online Interpreter](https://htmlpreview.github.io/?https://github.com/Y0UR-U5ERNAME/PIGS/blob/main/interpreters/HTML%20%2B%20JS/pigs.html)
+[Online Interpreter](https://y0ur-u5ername.github.io/PIGS/interpreters/HTML%20%2B%20JS/pigs.html)
 
 ## Documentation
 In PIGS, each command comes before its parameter. Commands include:
