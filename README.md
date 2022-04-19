@@ -7,7 +7,7 @@ PIGS is a minimalistic interpreted esolang based around pointers made by Y0UR-U5
 In PIGS, each command comes before its parameter. Commands include:
 - `P`: Prints the corresponding character of the variable that the parameter points to. If this is impossible, then it prints nothing.
 - `I`: Takes input starting with the variable that the parameter points to. The corresponding number of each character is stored.
-- `G`: Starts running from a specific index of the commands, specified by the variable that the parameter points to. If the index goes past the end of the code, then the program is terminated.
+- `G`: Starts running from a specific index (0-indexed) of the commands, specified by the variable that the parameter points to. If the index goes past the end of the code, then the program is terminated.
 - `S`: Prepares to set the variable that the variable that the parameter points to, points to. By default this is 0.
 - `+`: Adds the variable that the parameter points to to the prepared variable.
 - `-`: Subtracts the variable that the parameter points to from the prepared variable.
