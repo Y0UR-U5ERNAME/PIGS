@@ -1,8 +1,6 @@
 # PIGS
 PIGS is a minimalistic interpreted esolang based around pointers made by Y0UR-U5ERNAME. Its name originates from the four main commands in it: `P`, `I`, `G`, and `S`.
 
-[Online Interpreter](https://y0ur-u5ername.github.io/PIGS/interpreters/HTML%20%2B%20JS/pigs.html)
-
 ## Documentation
 In PIGS, each command comes before its parameter. Commands include:
 - `P`: Prints the corresponding character of the variable that the parameter points to. If this is impossible, then it prints nothing.
@@ -25,3 +23,6 @@ All characters besides those described above are treated as comments.
 - [Infinite loop](https://esolangs.org/wiki/Infinite_loop): `G0`
 - [Cat program](https://esolangs.org/wiki/Cat_program): `#1S0#10S1#1000S0#101S1#11110S0+0S1#100101S0+0S1#10010I10S0#11S1:10=100+0+0+0+0+0:11G11:10P11S0#10S1+0G111`
 - [Scream very loudly](https://codegolf.stackexchange.com/questions/200306/scream-very-loudly): `#1000001P0G1`
+
+## Interpreters
+There are currently two interpreters for PIGS, one in Python and one in HTML + JavaScript. The HTML + JS one can be directly run [online](https://y0ur-u5ername.github.io/PIGS/interpreters/HTML%20%2B%20JS/pigs.html) where you can input the program code and hit Run. For the Python interpreter, it can be found in the interpreters folder and programs can be run using the command `py pigs.py program_name.pigs` where `program_name` is the name of your PIGS program and an optional `-d` flag can be added to the end for activating debug mode.
