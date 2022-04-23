@@ -26,8 +26,14 @@ def main(argv=sys.argv):
     program = re.sub('[^PIGS+-=:#01]', '', program)
     prgm.close()
 
+    debug = False
+    if len(argv) > 2:
+        flags = argv[2:]
+        if '-d' in flags:
+            debug = True
+
     commands = [i for i in re.findall('([PIGS+-=:#])([01]+)', program) if i[0] in 'PIGS+-=:#']
-    print('Compressed Program:', ''.join([''.join(i) for i in commands]) + '\n')
+    if debug: print('Compressed Program:', ''.join([''.join(i) for i in commands]) + '\n')
     
     c = 0
     pv = 0
@@ -67,7 +73,7 @@ def main(argv=sys.argv):
             variables[pv] = j
             clamp(variables[pv])
         c += 1
-    #print(variables)
+    if debug: print('\nVariables:', variables)
 
 if __name__ == "__main__":
     main()
